@@ -20,7 +20,6 @@ type SelectedGame = {
 };
 
 interface PopularGameProps {
-  addedGames: () => void;
   Flame: string;
   MdEuro: IconType;
   handleFavoriteToggle: (game: Game) => void;
