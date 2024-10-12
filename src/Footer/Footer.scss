@@ -1,0 +1,74 @@
+.wrapper-2 {
+  background-color: black;
+  padding: 2em 10em;
+}
+.Text_Header {
+  margin: 0 50px;
+  color: gray;
+}
+.contacts {
+  margin-right: 18px;
+}
+.left_side34 {
+  display: flex;
+  align-items: center;
+}
+.Text_Header_Cap {
+  display: flex;
+  padding-bottom: 2%;
+  justify-content: space-between; /* Додає рівний відступ між елементами */
+  flex-wrap: nowrap; /* Забороняє перенос елементів на наступний рядок */
+  width: 100%;
+  padding-right: 5%;
+}
+
+.Text_Header_Cap > a {
+  cursor: pointer;
+}
+.Text_Header_Cap_Under {
+  font-size: 10px;
+}
+.Img {
+  display: flex;
+}
+
+.YWR {
+  cursor: pointer;
+}
+
+ul {
+  gap: 10%;
+  display: flex;
+  list-style-type: none;
+}
+.contacts:hover {
+  color: #fcaf17;
+}
+
+.right_side {
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+}
+.wrapper-text {
+  padding-bottom: 1.2em;
+}
+.text-wrapper-contacts {
+  font-size: 20px;
+  font-weight: 700;
+}
+.contactIcon:hover {
+  fill: #915eff;
+}
+.InstagramIcon:hover {
+  fill: #fd0269;
+}
+.TwitterIcon:hover {
+  fill: aqua;
+}
+.YoutubeIcon:hover {
+  fill: red;
+}
+.FacebookIcon:hover {
+  fill: #4867aa;
+}

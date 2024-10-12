@@ -1,0 +1,35 @@
+.select-block {
+  margin-top: 3em;
+  background-color: rgba(66, 60, 35, 0.1);
+
+  .il-menu-el-about {
+    padding: 1em;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  .il-menu-el-about:hover {
+    border-bottom: 3px solid #d68e00;
+  }
+
+  .il-menu-el-about-select {
+    align-items: center;
+    border-bottom: 3px solid #d68e00;
+    padding: 1em;
+    color: #fcaf17;
+    font-size: 20px;
+  }
+
+  .wrapper-select {
+    padding: 0 6em;
+  }
+  .menu-select {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+
+.icon-menu {
+  padding-right: 5px;
+}

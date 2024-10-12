@@ -1,0 +1,42 @@
+.Hedaer_Text {
+    font-size: 4em;
+}
+
+.Main_Section {
+    padding: 0;
+}
+
+.Header_Section {
+    display: flex;
+}
+
+.Contacts_Section {
+    padding: 1em 0em;
+}
+
+.Tel {
+    font-weight: bolder;
+    font-size: 5em;
+}
+
+.wrapper_contact_section {
+
+    display: grid;
+}
+
+.Tel_span_el {
+    padding-bottom: 1em;
+}
+
+.Tel_text {
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.Tel_span_el {
+    align-items: center;
+    display: flex;
+}
+.icon {
+    padding-left: 1em;
+}

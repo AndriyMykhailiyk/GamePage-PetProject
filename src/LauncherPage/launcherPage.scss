@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.main_Section {
+  margin: 1em 0em;
+  padding-bottom: 5em;
+}
+.wrapper_div_main_Section {
+  padding: 0em 5em;
+  padding-left: 0;
+}
+
+.mainPhoto {
+  display: flex;
+  width: 60%;
+}
+
+.wrapper_div_main_Section_Img {
+  display: flex;
+}
+
+.wrapper_div_main_Section_Text_Header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 600;
+  font-size: 40px;
+}
+.wrapper_div_main_Section_Text_SubHeader {
+  font-style: oblique;
+  font-weight: 900;
+  font-size: 16px;
+}
+.wrapper_div_main_Section_Text {
+  padding-left: 5em;
+}
+.wrapper_div_main_Section_Text_Main {
+  display: flex;
+  padding-bottom: 1.5em;
+}
+.wrapper_div_main_Section_Text_SubMain {
+  padding-bottom: 1em;
+}
+.Backgroud-Text {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(
+    to right,
+    #f5c566,
+    #fcaf17
+  ); /* Градієнт для фону */
+  color: white;
+  font-size: 23px;
+  font-weight: bold;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 15px; /* Заокруглені кути */
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5); /* Тінь для тексту */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Тінь для всього блоку */
+  font-family: Arial, sans-serif; /* Шрифт */
+}
+.Question_Section {
+  align-items: center;
+  display: flex;
+}
+
+.setings {
+  font-weight: 600;
+  font-size: 16px;
+}
+.wrapper_div_Question_Section {
+  padding-right: 2em;
+}
+.underline_link {
+  font-weight: 600;
+  color: gray;
+  text-decoration: underline;
+}
+
+.Text_question {
+  color: gray;
+  font-size: 14px;
+  font-weight: 600;
+}
+.Question_Section_Text {
+  padding-top: 2em;
+}
+
+.wiki {
+  text-decoration-color: #21ff21;
+  text-decoration: underline;
+  color: white;
+}
+
+@media screen and (max-width: 1440px) {
+  .mainPhoto {
+    height: 100%;
+    width: 65%;
+  }
+  .wrapper_div_main_Section_Text_Header {
+    font-size: 31px;
+  }
+  .Backgroud-Text {
+    font-size: 19px;
+  }
+  .wrapper_div_main_Section_Text_SubHeader {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1650px) {
+  .wrapper-svg {
+    font-size: 1em;
+  }
+}
+@media screen and (max-width: 1700px) {
+  .Question_Section {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1535px) {
+  .Backgroud-Text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1490px) {
+  .Backgroud-Text {
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 1460px) {
+  .Backgroud-Text {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1430px) {
+  .Backgroud-Text {
+    font-size: 10px;
+  }
+}

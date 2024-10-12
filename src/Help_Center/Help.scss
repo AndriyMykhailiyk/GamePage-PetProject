@@ -1,0 +1,99 @@
+.help-Center {
+  padding-bottom: 1em;
+}
+
+h1 {
+  font-size: 20rem;
+  justify-content: center;
+  display: flex;
+}
+
+.section_question {
+  padding-top: 5em;
+  justify-content: center;
+  display: flex;
+}
+
+.Header_Text_Sectiob {
+  padding-bottom: 3em;
+}
+
+.Search_input_section {
+  width: 60%;
+  display: flex;
+}
+
+.input_element {
+  padding: 1.2em 0em 1.2em 1em;
+  padding-left: 1em;
+  width: 100%;
+  border: 1px solid white;
+}
+
+.input_element::placeholder {
+  color: black;
+  margin-left: 1em;
+  font-weight: 600;
+}
+
+.Search_input_section_layout {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1430px) and (max-width: 1479px) {
+  .help-Center {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1480px) and (max-width: 1510px) {
+  .help-Center {
+    font-size: 42px;
+  }
+}
+
+@media screen and (min-width: 1511px) and (max-width: 1549px) {
+  .help-Center {
+    font-size: 47px;
+  }
+}
+
+@media screen and (min-width: 1550px) and (max-width: 1600px) {
+  .help-Center {
+    font-size: 53px;
+  }
+}
+@media screen and (min-width: 1601px) and (max-width: 1650px) {
+  .help-Center {
+    font-size: 64px;
+  }
+}
+
+@media screen and (min-width: 1651px) and (max-width: 1700px) {
+  .help-Center {
+    font-size: 67px;
+  }
+}
+
+@media screen and (min-width: 1701px) and (max-width: 1800px) {
+  .help-Center {
+    font-size: 71px;
+  }
+}
+
+@media screen and (min-width: 1801px) and (max-width: 1900px) {
+  .help-Center {
+    font-size: 83px;
+  }
+}
+@media screen and (min-width: 1901px) and (max-width: 2000px) {
+  .help-Center {
+    font-size: 92px;
+  }
+}
+
+.Main_Section {
+  height: 100vh;
+}

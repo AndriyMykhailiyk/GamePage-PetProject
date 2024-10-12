@@ -1,0 +1,289 @@
+.layout {
+  justify-content: space-around;
+  display: flex;
+}
+.about-Game-Block {
+  padding: 1em 1.5em;
+  width: 55%;
+  background-color: #514b82;
+  border-radius: 12px;
+}
+
+.Photo_List-about {
+  width: 23%;
+}
+
+.Photo_List-about:hover {
+  width: 24%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+
+
+.header-full {
+  font-size: 28px;
+}
+.layout-wrapper {
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.layout-language {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: grid;
+}
+
+.header-full-language {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product_active-Btn-Item {
+  margin-bottom: 10px;
+  font-family: "Roboto";
+  border: 2px #fcaf17 solid;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
+
+.product-infolist {
+  display: flex;
+  gap: 15px;
+}
+a {
+  cursor: pointer;
+}
+.product_active-Btn-Item-get {
+  color: #a6a8b6;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 3px #676c8c solid;
+}
+
+.product_active-Btn-Item-get:hover {
+  color: #a6a8b6;
+  margin-bottom: 10px;
+  padding: 8px 10px;
+  border-radius: 5px;
+  transition: 20ms;
+  border: 3px white solid;
+}
+
+.btn_secabout {
+  background-color: #fcaf17;
+  font-size: 20px;
+  padding: 0.7em 3em;
+}
+.layout-Btn {
+  padding-top: 1.7em;
+}
+
+.btn-liced {
+  display: flex;
+  gap: 55px;
+  padding-bottom: 0.6em;
+}
+
+.AddGame {
+  background-color: #fb6868;
+  border-radius: 0px;
+  font-size: 20px;
+}
+.NotAddGame {
+  background-color: #fcaf17;
+  border-radius: 0px;
+  font-size: 20px;
+}
+
+.NotAddGame:hover {
+  background-color: rgb(182, 134, 38);
+}
+.stock {
+  font-weight: 600;
+  color: #3cb878;
+  cursor: text;
+}
+.prs {
+  cursor: text;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 25px;
+}
+.wrapper-prise {
+  cursor: default;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}
+.installment-plan {
+  display: flex;
+  padding-top: 1em;
+}
+
+.text-roz {
+  font-size: 20px;
+}
+
+.wrapper-layout {
+  justify-content: space-between;
+  display: flex;
+}
+
+.seller-block {
+  width: 40%;
+  height: 100%;
+  padding-top: 1.7em;
+}
+.wrapper-block-seller {
+  background-color: #695fbf;
+  flex-direction: column;
+  padding: 1em;
+  display: flex;
+  height: 100%;
+}
+
+.hader-block-seller {
+  font-weight: 700;
+  font-size: 18px;
+  color: black;
+}
+
+.header {
+  padding-bottom: 1em;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  width: 80%; /* Задаємо ширину блоку */
+  padding: 20px;
+}
+
+.list li {
+  margin-bottom: 10px;
+}
+
+.wrapper-dap {
+  padding: 1em 1.5em;
+}
+.seller-block-about {
+  margin-top: 1.7em;
+  background-color: hsl(246, 33%, 35%);
+  width: 43%;
+}
+.ul-about89 {
+  display: block;
+  padding: 0;
+}
+
+.el-li-text {
+  font-size: 14px;
+  margin: 3px 0px;
+}
+.header-text {
+  align-items: center;
+  display: flex;
+}
+.svg-logo {
+  padding-right: 0.8em;
+}
+
+.hedaer-block {
+  padding-bottom: 0.9em;
+}
+
+.li-el {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.prs {
+  font-weight: 600;
+  color: #e63b56;
+}
+
+.wrapper-btn-about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.selecter-game {
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.liked {
+  align-items: center;
+}
+.FaRegHeart {
+  padding-right: 0.3em;
+}
+
+.uah-class {
+  color: white;
+  width: 3%;
+}
+
+.wrapper-btn-prise {
+  display: flex;
+  gap: 50px;
+}
+.wrapper-prise-old {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.old-prs {
+  text-decoration: line-through;
+  color: #a6a8b6;
+  cursor: text;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.wrapper-selecter {
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  padding: 5px 8px;
+  border: 1px solid gainsboro;
+}
+
+.wrapper-selecter:hover {
+  cursor: pointer;
+  background-color: white;
+  .selecter-game {
+    color: #fcaf17;
+  }
+  .FaRegHeart {
+    color: #fcaf17;
+  }
+}
+
+.select-block {
+  margin-top: 3em;
+  background-color: rgba(66, 60, 35, 0.1);
+
+  .il-menu-select-about {
+    padding: 1em;
+    font-size: 20px;
+  }
+
+  .wrapper-select {
+    padding: 0 6em;
+  }
+  .menu-select {
+    display: flex;
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,141 @@
+p {
+  display: inline-block;
+  margin: 0;
+}
+.wrapper {
+  padding: 2em 10em;
+}
+.liked {
+  display: flex;
+}
+.ul_header {
+  align-items: center;
+  font-size: 1em;
+  padding: 0 2em;
+  gap: 15%;
+  display: flex;
+  list-style: none;
+}
+
+.Hello {
+  padding-right: 3em;
+}
+
+.ul_header > li {
+  text-decoration: none;
+  cursor: pointer;
+}
+.about_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.right_side {
+  gap: 0px;
+  display: flex;
+  align-items: center;
+  .modale-window {
+    cursor: pointer;
+  }
+}
+
+.btn_header {
+  font-size: 1em;
+  color: black;
+  background-color: #fcaf17;
+}
+
+.svg {
+  border-radius: 50%;
+  padding: 4%;
+  background-color: gray;
+}
+
+.left_side {
+  display: flex;
+}
+
+.Logo_Header {
+  padding-right: 30%;
+}
+
+@media screen and (min-height: 1440px) {
+  .SaveGame {
+    font-size: 23px;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1510px) {
+  .help-Center {
+    font-size: 67px;
+  }
+}
+
+li:hover {
+  color: #fcaf17;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.wrapper-side-menu {
+  margin-top: 240px;
+  height: 100px;
+  width: 200px;
+  position: absolute;
+  background-color: red;
+  right: 1;
+}
+
+.modale {
+  margin-left: 74em;
+  margin-top: 14em;
+  position: absolute;
+  background-color: blue;
+}
+
+.wrapper-modale {
+  display: grid;
+  padding: 1em 0.7em;
+}
+.selected {
+  color: white;
+  font-size: 20px;
+}
+.header-modale {
+  position: absolute;
+  background-color: red;
+}
+
+.modal {
+  position: absolute;
+}
+
+.acc {
+  display: flex;
+}
+.Search_input_section-header {
+  width: 30%;
+}
+
+.wrapper-tel {  
+   display: flex;
+  align-items: center;
+  flex-direction: column;}
+
+.tel-p-text {
+  margin-top: 5px;
+  font-weight: 500;
+font-size: 13px;
+  }
+
+  .tel-a-te {
+  
+    line-height: 15px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .tel-a-te:hover {
+  
+color: #fcaf17;  }

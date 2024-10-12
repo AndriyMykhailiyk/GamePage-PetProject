@@ -1,0 +1,178 @@
+.Set-value-Game {
+  padding-bottom: 15px;
+  font-weight: 700;
+  font-size: 22px;
+}
+.wrapper_account {
+  margin-bottom: 5px;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: #101010;
+  padding: 1em 1em;
+  align-items: center;
+  display: flex;
+}
+
+.li:hover {
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
+h1 {
+  font-size: 35px;
+}
+/**
+#47476b;
+**/
+
+.wrapper-menu {
+  width: 65%;
+  border-radius: 0.6em;
+  padding: 2em 2.3em;
+  background-color: #47476b;
+  display: inline-block;
+}
+
+.wrapper-menu-second {
+  height: 50%;
+  width: 25%;
+  border-radius: 0.6em;
+  padding: 2em 2em;
+  background-color: #47476b;
+  display: inline-block;
+}
+
+.count-Game {
+  line-height: 20px;
+  font-weight: 800;
+  border-radius: 3px;
+  padding: 1px 4px;
+  background-color: #f31a5a;
+  margin-left: 15px;
+}
+.cross {
+  cursor: pointer;
+}
+.wrapper-Main-section {
+  display: flex;
+  gap: 25px;
+}
+.Prise-Block {
+  display: grid;
+  gap: 10px;
+}
+.prises {
+  font-size: 25px;
+}
+
+.wrapper-prise1 {
+  display: flex;
+}
+.right-side {
+  gap: 20px;
+  align-items: center;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+.platform {
+  font-size: 12px;
+}
+
+.text-platfrom {
+  font-size: 13px;
+}
+.Photo_List-basket {
+  padding-right: 18px;
+  width: 25%;
+}
+
+a {
+  display: flex;
+}
+.amount {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sum-number {
+  font-weight: bold;
+}
+.total_price {
+  font-weight: 700;
+  font-size: 22px;
+}
+.Button-Content {
+  padding-top: 1em;
+}
+
+.btn-section {
+  display: flex;
+  justify-content: center;
+}
+
+.text-name-game:hover {
+  color: #fcaf17;
+  cursor: pointer;
+}
+
+.wrapper-23 {
+  padding: 2em 10em;
+  height: 100vh;
+}
+
+.wrapper_header {
+  gap: 10px;
+  align-items: baseline;
+  display: flex;
+  flex-direction: column;
+}
+.busketsetUNset {
+  cursor: pointer;
+}
+.fovoriteUNset {
+  cursor: pointer;
+}
+.fovoriteset {
+  cursor: pointer;
+  color: #fcaf17;
+}
+.busketset {
+  cursor: pointer;
+  color: #fcaf17;
+}
+
+.Photo_List-favoriteliked {
+  padding-right: 18px;
+  width: 25%;
+}
+
+.wrapper-priseLiked {
+  display: flex;
+}
+.counter_game {
+  border-radius: 30px;
+  background-color: #47476b;
+.add {
+  padding:0.3 0.4em;
+  background-color: transparent;
+}
+.minus {
+  padding: 0.3 0.4em;
+  background-color: transparent;
+
+}
+.add:hover {
+
+  border-color: transparent;
+}
+.minus:hover {
+  border-color: transparent;
+}
+}
+
+.counter_game:hover {
+ border: 2px solid black;
+}

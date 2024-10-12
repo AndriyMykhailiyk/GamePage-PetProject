@@ -1,0 +1,162 @@
+.wrapper-delivery-block {
+  padding: 1em 4em;
+  padding-top: 1em;
+
+  .section-block {
+    width: 100%;
+    display: flex;
+    background-color: #514b82;
+    border-radius: 10px;
+
+    .ul-block {
+      width: 25%;
+      padding: 2.5em;
+    }
+  }
+}
+
+.product-delivery-active {
+  font-weight: 900;
+  color: #fcaf17;
+  font-size: 23px;
+}
+
+.wrapper-delivery-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Вирівнювання по центру */
+}
+
+.ul-list {
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 20px; /* Відступ між елементами списку */
+}
+
+.contend-block h1 {
+  margin: 0;
+  padding-left: 20px; /* Відступ від списку */
+}
+
+.el-ul a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px; /* Налаштуйте відповідний розмір шрифту */
+}
+
+.el-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px; /* Налаштуйте відповідний розмір шрифту */
+}
+.product-delivery {
+  font-weight: 900;
+  font-size: 23px;
+  .product-delivery-active {
+    cursor: text;
+    font-weight: 900;
+    color: #fcaf17;
+    font-size: 23px;
+  }
+}
+
+.product-pay {
+  font-weight: 900;
+  font-size: 23px;
+}
+.product-garant {
+  font-weight: 900;
+  font-size: 23px;
+}
+.wrapper-content-block {
+  padding: 2.5em;
+}
+
+.sity-block {
+  padding-bottom: 1em;
+  display: flex;
+  font-size: 19px;
+  .city-change {
+    color: #fcaf17;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding-left: 0.5em;
+    .pan:hover {
+      cursor: pointer;
+    }
+
+    a {
+      color: #fcaf17;
+
+      text-decoration: underline;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.new-mail-content {
+  display: flex;
+  .mail-svg {
+    padding-right: 0.4em;
+  }
+}
+.mail {
+  display: flex;
+  flex-direction: column;
+  .header-mail {
+    font-weight: 700;
+    font-size: 19px;
+  }
+  .sub-header-mail {
+    font-weight: 500;
+  }
+}
+
+.wrapper-67 {
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  width: 150%;
+}
+
+.pay-block {
+  padding-bottom: 0.2em;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+}
+.back-block {
+  text-decoration: underline;
+  color: #fcaf17;
+  padding-bottom: 0.2em;
+  display: flex;
+  align-items: center;
+  font-size: 19px;
+}
+
+.FaPaypal {
+  padding-right: 0.8em;
+}
+.text-div {
+  align-items: center;
+  display: flex;
+}
+
+.contend-block {
+  padding-bottom: 1em;
+}
+
+.text-wrap-del {
+  align-items: center;
+}
+.sub-delivery-block {
+  font-weight: 700;
+  font-size: 18px;
+}

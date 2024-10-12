@@ -1,0 +1,58 @@
+.Photo {
+  display: flex;
+  align-items: center;
+  position: relative; /* Відносне позиціонування для контейнера */
+  width: 100%;
+  height: 500px; /* Додайте мінімальну висоту для контейнера */
+}
+
+.Background_Image,
+.Overlay_Image {
+  position: absolute; /* Абсолютне позиціонування */
+  top: 0; /* Зсув зверху */
+  left: 0; /* Зсув зліва */
+  width: 100%; /* Розтягування на всю ширину контейнера */
+  height: 100%; /* Розтягування на всю висоту контейнера */
+  object-fit: cover; /* Збереження пропорцій та заповнення контейнера */
+}
+
+.Overlay_Image {
+  right: 0;
+  height: 90%;
+  padding-top: 2%;
+  left: auto;
+  width: 60%; /* Зменшення ширини накладеного зображення */ /* Накладання зображення поверх іншого */ /* Прозорість накладеного зображення */
+}
+.Header_section {
+  z-index: 1;
+}
+
+.Text_Section_Header {
+  color: black;
+}
+
+.Header_section {
+  display: flex;
+  align-items: center;
+}
+
+.Logo_Gta {
+  padding-right: 1em;
+}
+
+.description_wrapper_photo {
+  font-weight: 600;
+  font-size: 2rem;
+  color: black;
+}
+
+.section {
+  padding-left: 76px;
+  z-index: 1;
+}
+
+.section {
+  gap: 20px;
+  display: grid;
+  align-items: center;
+}

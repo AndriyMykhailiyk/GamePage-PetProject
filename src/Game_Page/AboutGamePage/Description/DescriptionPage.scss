@@ -1,0 +1,81 @@
+.wrapper-ul-list-block {
+    padding-bottom: 2em;
+}
+
+
+.Description-header {
+    font-size: 27px;
+    font-weight: 900;
+}
+
+.Ul-El-description {
+    display: block;
+    padding: 0;
+}
+
+.li-title {
+    justify-content: space-between;
+    display: flex;
+    padding: 15px 0px;
+}
+
+.text-value-1 {
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 20px;
+}
+
+.text-value-2 {
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.ul-block-des {
+    width: 100%;
+    padding: 2.5em;
+  }
+
+  .text-value-2:first-child {
+text-decoration: underline;
+}
+
+p#no {
+    text-decoration: underline;
+color: #fcaf17;  }
+
+p#game {
+    text-decoration: underline;
+color: #fcaf17;  }
+
+p#plantofm {
+    text-decoration: underline;
+color: #fcaf17;  }
+
+
+p#data_resile-year {
+    text-decoration: underline;
+color: #fcaf17;  }
+
+p#age_limit {
+    text-decoration: underline;
+color: #fcaf17;  }
+
+
+p#no:hover {
+    text-decoration: none;
+color: #fcaf17;  }
+
+p#game:hover {
+    text-decoration: none;color: #fcaf17;  }
+
+p#plantofm:hover {
+    text-decoration: none;color: #fcaf17;  }
+
+
+p#data_resile-year:hover {
+    text-decoration: none;color: #fcaf17;  }
+
+p#age_limit:hover {
+    text-decoration: none;color: #fcaf17;  }

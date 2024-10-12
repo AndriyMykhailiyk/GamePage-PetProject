@@ -1,0 +1,50 @@
+.menu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #2c2c2c;
+    color: white;
+    text-decoration: none;
+    transition: background 0.2s;
+  
+    &:hover {
+      background-color: #3d3d3d;
+    }
+  }
+  
+  .menu-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+  
+  /* Забезпечує, що меню залишатиметься в межах екрану */
+  .fixed {
+    position: fixed;
+  }
+  
+  .overflow-y-auto {
+    overflow-y: auto;
+  }
+  
+  .w-64 {
+    width: 16rem; /* Фіксована ширина меню */
+  }
+  
+  .h-screen {
+    height: 100vh; /* Меню займатиме всю висоту екрану */
+  }
+  
+  .bg-zinc-900 {
+    background-color: #181818;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  

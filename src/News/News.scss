@@ -1,0 +1,201 @@
+.Wrapper_News {
+  justify-content: space-between;
+  display: flex;
+  padding-top: 3em;
+}
+
+.wrapper_photo {
+  display: inline-block;
+}
+
+.black_side {
+  width: 100%;
+  display: inline-block;
+  height: 100px;
+  background-color: RED;
+}
+
+.Right_Side {
+  width: 100%; /* Або конкретна ширина зображення, наприклад 300px */
+  max-width: 300px; /* Приклад фіксованої ширини */
+  display: block;
+
+  display: grid;
+}
+
+.containertext {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.Description {
+  color: gray;
+}
+.Main_Heaeder {
+  padding-bottom: 15px;
+}
+
+.P_text_header {
+  padding-right: 1vw;
+}
+
+.text_section {
+  width: 100%;
+  max-width: 300px; /* Така ж ширина, як у зображення */
+  white-space: nowrap; /* Забороняє перенос рядка */
+  overflow: hidden; /* Приховує текст, що виходить за межі */
+  text-overflow: ellipsis;
+}
+
+.Wrapper_News {
+  padding-bottom: 4vh;
+}
+
+@media screen and (max-width: 1440px) {
+  .Main_News {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .Main_News_second {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  .Main_News_second {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .Main_News_second {
+    width: 65%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .Main_News_second {
+    width: 50%;
+  }
+}
+
+.img {
+  display: inline-block;
+  overflow: hidden;
+}
+.img img {
+  width: 100%;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section-bg {
+  padding: 5em 10em;
+  background-image: url("./silent-hill-2-pyramid-head-4k-wallpaper-uhdpaper.com-830@0@j.jpg");
+  background-size: cover; /* або contain, в залежності від ваших потреб */
+  background-position: center;
+  height: 50vh; /* Висота секції */
+  display: flex; /* Додати flex для центровання тексту */
+  color: white; /* Колір тексту */
+}
+
+@media (max-width: 1500px) {
+  .section-bg {
+    height: 50vh; /* Зменшити висоту секції на менших екранах */
+  }
+}
+@media (max-width: 1300px) {
+  .section-bg {
+    height: 40vh; /* Зменшити висоту секції на менших екранах */
+  }
+}
+@media (max-width: 1190px) {
+  .section-bg {
+    height: 30vh; /* Зменшити висоту секції на менших екранах */
+  }
+}
+
+.game-Title-silen {
+  display: block;
+  padding-bottom: 20px;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 65px;
+}
+
+.game-prise-silen {
+  display: block;
+  padding-bottom: 20px;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 45px;
+}
+.game-prise-silen-usd {
+  padding-right: 1em;
+  padding-bottom: 20px;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 45px;
+}
+.game-prise-silen-prise {
+  text-decoration: line-through;
+  padding-bottom: 20px;
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 45px;
+}
+
+.game-Title-silen-publisher {
+  font-family: "Barlow";
+  font-weight: 600;
+  font-size: 21px;
+}
+
+.game-publisher {
+  font-family: "Barlow";
+  font-weight: 400;
+  font-size: 25px;
+}
+.wrapper-full-card {
+  display: flex;
+}
+.Price-wrap {
+  padding-top: 3em;
+}
+
+.usd-tex {
+  padding-right: 10px;
+}
+
+.btn_silen {
+  background-color: #ffab00;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0.8em 2.7em;
+}
+
+.btn_silen_buy {
+  background-color: #ffab00;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0.8em 2.7em;
+}
+
+.Btn-wrap-silen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.relise-text {
+  font-weight: 400;
+  font-size: 18px;
+}
+.relise-block {
+  padding-top: 2em;
+}

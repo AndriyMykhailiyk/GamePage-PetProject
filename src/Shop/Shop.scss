@@ -1,0 +1,54 @@
+h1 {
+  padding: 0;
+}
+.wrapperPage {
+  padding: 0em 10em;
+}
+.Menu_Menu {
+  padding: 1em 0em;
+  background-color: black;
+}
+ul {
+  justify-content: center;
+  margin: 0;
+}
+
+li {
+  cursor: pointer;
+}
+.PlayStation:active {
+  color: #fcaf17;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 1em;
+  border-radius: 20px;
+  color: #514b82;
+  border: 2px solid;
+  position: relative;
+}
+.loader::before {
+  content: "";
+  position: absolute;
+  margin: 2px;
+  inset: 0 100% 0 0;
+  border-radius: inherit;
+  background: currentColor;
+  animation: l6 2s infinite;
+}
+@keyframes l6 {
+  100% {
+    inset: 0;
+  }
+}
+
+.Icon-Arrow {
+  transition: transform 0.6s;
+}
+
+.flipt {
+  transform: rotate(180deg);
+}

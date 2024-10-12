@@ -1,0 +1,79 @@
+.slider {
+  width: 100%;
+  .sli {
+    color: black;
+    font-size: 40px;
+  }
+}
+
+.CarouselProvider1 {
+  margin: 0 4em;
+  display: flex;
+  align-items: center;
+}
+
+.Search_List_Item-slider {
+  margin: 0em 0em 1em 0em;
+  display: inline-block;
+}
+.Search_List_Item-slider:first-child {
+  width: 195px;
+  padding-left: 0;
+  margin: 0em 0em 1em 0em;
+  display: inline-block;
+}
+
+.Search_List_Item-slider:last-child {
+  margin: 0em 0em 1em 0em;
+  display: inline-block;
+  padding-right: 0;
+}
+.Photo_List-slider {
+  cursor: pointer;
+  width: 70%;
+  box-sizing: border-box;
+  min-width: 120px;
+}
+.custom-arrow {
+  border-radius: 30px;
+  padding: 20px 7px;
+  height: 50%;
+  background-color: #474545;
+}
+.custom-arrow:hover {
+  border: 2px solid rgb(0, 0, 0);
+}
+.wrapper-el {
+  display: flex;
+  flex-direction: column;
+}
+.wrapper-prise {
+  display: flex;
+}
+.prise-text {
+  padding-left: 0.4em;
+}
+.wrapper-prise-block {
+  padding-top: 5px;
+}
+
+.wrapper-carosel-wrapper02 {
+  display: flex;
+  align-items: center;
+}
+.textcar {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.title-slider {
+  cursor: pointer;
+}
+.title-slider:hover {
+  color: rgb(187, 187, 187);
+}
+.closes-data {
+  padding-bottom: 1em;
+flex-direction: column;
+  display: flex;
+}

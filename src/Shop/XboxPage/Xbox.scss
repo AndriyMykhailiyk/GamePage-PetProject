@@ -1,0 +1,35 @@
+.wrapper_header {
+  padding: 2em 0;
+  display: flex;
+}
+
+.platfrom24 {
+  padding-top: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-platform24 {
+  display: none;
+}
+.Search_List_Item:hover .wrapper-platform24 {
+  display: block;
+}
+.FaRegHeartGamePage {
+  cursor: pointer;
+}
+.platfrom25 {
+  justify-content: space-between;
+  display: flex;
+}
+.FaRegHeartGamePage {
+  padding: 0px;
+}
+.wrapper-platform25 {
+  padding-top: 1em;
+  display: none;
+}
+
+.Search_List_Item:hover .wrapper-platform25 {
+  display: block;
+}
