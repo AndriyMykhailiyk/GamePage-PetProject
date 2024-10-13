@@ -19,6 +19,13 @@ interface GameI {
 }
 
 export type Xboxx = {
+  SelectedGames: {
+    id: number;
+    title: string;
+    img: string;
+    plantofm: string;
+    price: number;
+  }[];
   handleFavoriteToggle: (game: Plantofm) => void;
   hoveredGame: null;
   filteredByXbox:GameI[];

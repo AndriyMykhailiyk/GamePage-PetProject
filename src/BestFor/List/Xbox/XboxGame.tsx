@@ -9,7 +9,6 @@ const XboxGame = ({
   filteredByXbox,
   hoveredGame,
   setHoveredGame,
-  selectedGames,
   handleFavoriteToggle,
 }: Xboxx) => {
   const dispatch = useDispatch();

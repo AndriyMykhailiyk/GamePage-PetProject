@@ -209,7 +209,7 @@ const BestGameCart = () => {
           />
         ) : (
           <div className="List-section">
-            {filteredByPc.map((game: {id: SetStateAction<null>}) => (
+            {filteredByPc.map((game) => (
               <div
                 className="Search_List_Item-Main"
                 key={game.id}
