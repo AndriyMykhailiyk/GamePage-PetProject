@@ -22,26 +22,15 @@ export interface CounterState {
   count: number;
   counterSelected: {
     count: any;
-    SelectedGames: {
-      id: number;
-      title: string;
-      img: string;
-      plantofm: string;
-      price: number;
-    }[];
+    SelectedGames: SelectedGame[]; // Use the SelectedGame interface here
   };
 
-  SelectedGames: {
-    id: number;
-    title: string;
-    img: string;
-    plantofm: string;
-    price: number;
-  }[];
+  SelectedGames: SelectedGame[]; // Use the SelectedGame interface here
 
   addedGames: Game[];
   AddFavorute: {
     count: number; // Лічильник вибраних ігор
+    SelectedGames: SelectedGame[]; // Include SelectedGames here
   };
 }
 
@@ -51,9 +40,15 @@ const initialState: CounterState = {
   addedGames: [],
   AddFavorute: {
     count: 0, // Початкове значення для кількості обраних ігор
+    SelectedGames: [], 
+  },
+  counterSelected: {
+    count: 0,
     SelectedGames: [],
   },
+  SelectedGames: [], // Initialize as an empty array
 };
+
 
 const counterSlice = createSlice({
   name: "counter",
