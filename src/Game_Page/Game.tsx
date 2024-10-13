@@ -40,13 +40,13 @@ const GamePage = () => {
     plantofm: string,
     price: number
   ) => {
-    if (selectedGames.some((game: { id: number }) => game.id === id)) {
-      dispatch(removeselected(id, title, plantofm, price, img)); // Видалити з обраних
+    if (selectedGames.some((game) => game.id === id)) {
+      dispatch(removeselected(id)); // Тепер тільки ID
     } else {
-      dispatch(incrementselected({ id, title, plantofm, price, img })); // Додати до обраних
+      dispatch(incrementselected({ id, title, plantofm, price, img }));
     }
   };
-
+  
   useEffect(() => {
     fetch(
       "https://api.mockfly.dev/mocks/60fe8fb4-6deb-45bf-a8f8-8334d38c7cb1/Games"

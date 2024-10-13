@@ -8,13 +8,18 @@ import { MdEuro } from "react-icons/md";
 import { removeselected } from "../Redux/counterSlice";
 
 import { GotoBuy } from "../Btn/Btn.js";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link} from "react-router-dom";
 import { useState } from "react";
+
+type GameQuantities = {
+  [key: number]: number; // Ключі - id ігор, значення - кількість
+};
+
 
 const MyAccount = () => {
   const [busket, setBusket] = useState(true);
   const [fovorite, setfovorite] = useState(false);
-  const [gameQuantities, setGameQuantities] = useState({});
+  const [gameQuantities, setGameQuantities] = useState<GameQuantities>({});
 
 
   const HandleFavore = () => {

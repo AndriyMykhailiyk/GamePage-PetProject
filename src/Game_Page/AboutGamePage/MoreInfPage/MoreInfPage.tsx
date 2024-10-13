@@ -6,7 +6,7 @@ const MoreInfPage = () => {
   const { id } = useParams();
   const location = useLocation();
   const { games } = location.state; // Отримання ігор з state
-  const game = games.find((g: { id: number }) => g.id === parseInt(id)); // Знайти гру за ID
+  const game = id && games.find((g: { id: number }) => g.id === parseInt(id));
 
   type HeaderText = {
     Descriptiom: string;

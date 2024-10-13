@@ -80,8 +80,8 @@ const counterSlice = createSlice({
 const counterSelectedSlice = createSlice({
   name: "counterSelected",
   initialState: {
-    count: 0, // Початкове значення для кількості обраних ігор
-    SelectedGames: [] as SelectedGame[], // Типізований масив обраних ігор
+    count: 0,
+    SelectedGames: [] as SelectedGame[],
   },
   reducers: {
     incrementselected: (state, action: PayloadAction<SelectedGame>) => {
@@ -91,13 +91,13 @@ const counterSelectedSlice = createSlice({
         console.log("Гру №" + action.payload.id + " Додано до вибраних");
       }
     },
-    removeselected: (state, action: PayloadAction<SelectedGame>) => {
+    removeselected: (state, action: PayloadAction<number>) => {
       state.count -= 1;
       state.SelectedGames = state.SelectedGames.filter(
-        (game) => game.id !== Number(action.payload)
+        (game) => game.id !== action.payload // Передайте тільки ID
       );
       console.log("Гру №" + action.payload + " Видалено з вибраних");
-    },
+    }
   },
 });
 

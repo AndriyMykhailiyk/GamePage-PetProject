@@ -30,6 +30,7 @@ const News = () => {
       state.counter.addedGames
   );
 
+
   const handleFavoriteToggle = (
     id: number,
     img: string,
@@ -38,9 +39,9 @@ const News = () => {
     price: number
   ) => {
     if (selectedGames.some((game: { id: number }) => game.id === id)) {
-      dispatch(removeselected({ id, title, plantofm, price, img })); // Видалити з обраних
+      dispatch(removeselected(id, title, plantofm, price, img));
     } else {
-      dispatch(incrementselected({ id, title, plantofm, price, img })); // Додати до обраних
+      dispatch(incrementselected({ id, title, plantofm, price, img }));
     }
   };
 

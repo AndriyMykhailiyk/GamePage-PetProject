@@ -37,7 +37,8 @@ const BestGameCart = () => {
     price: number
   ) => {
     if (selectedGames.some((game: { id: number }) => game.id === id)) {
-      dispatch(removeselected(id, title, plantofm, price, img)); // Видалити з обраних
+
+      dispatch(removeselected({ id, title, plantofm, price, img })); // Видалити з обраних
     } else {
       dispatch(incrementselected({ id, title, plantofm, price, img })); // Додати до обраних
     }

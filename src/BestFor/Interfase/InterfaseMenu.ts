@@ -10,7 +10,15 @@ export default interface Xbox {
   filteredByPlayStation: (game: Plantofm) => string;
   data: any;
 }
+interface GameI {
+  id: number;
+  title: string;
+  price: number;
+  img: string;
+  plantofm: string;
+}
+
 export type Xboxx = {
   hoveredGame: null;
-  filteredByXbox: (game: Plantofm) => any;
+  filteredByXbox:GameI[];
 };
