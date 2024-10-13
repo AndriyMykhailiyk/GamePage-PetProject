@@ -8,13 +8,14 @@ import { MdEuro } from "react-icons/md";
 import { removeselected } from "../Redux/counterSlice";
 
 import { GotoBuy } from "../Btn/Btn.js";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useParams } from "react-router-dom";
 import { useState } from "react";
 
 const MyAccount = () => {
   const [busket, setBusket] = useState(true);
   const [fovorite, setfovorite] = useState(false);
   const [gameQuantities, setGameQuantities] = useState({});
+
 
   const HandleFavore = () => {
     setfovorite(true); // Показати вибрані
@@ -128,7 +129,7 @@ const MyAccount = () => {
                         <div className="content-section">
                           <Link
                             to={`/About/${game.id}`}
-                            state={{ games: addedGames }}
+                            state={{ games: favoriteGames }}
                           >
                             <div className="text-name-game">
                               Назва: {game.title}
@@ -237,9 +238,12 @@ const MyAccount = () => {
                       />
 
                       <div className="content-section">
+                      <Link to={`/About/${game.id}`} state={{ games: favoriteGames }}>
+
                         <div className="text-name-game">
                           Назва: {game.title}
                         </div>
+                        </Link>
                         <div className="platrorm-wrapper">
                           <p className="platform">
                             <span className="text-platfrom">Id: </span>

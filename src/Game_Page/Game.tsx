@@ -28,6 +28,7 @@ const GamePage = () => {
   const [minPrice, setMinPrice] = useState<number>(0); // Min price state
   const [maxPrice, setMaxPrice] = useState<number>(200); // Max price state
   const [menu, setMenu] = useState<boolean>(false);
+
   const selectedGames = useSelector(
     (state: CounterState) => state.counterSelected.SelectedGames
   );
@@ -48,7 +49,7 @@ const GamePage = () => {
 
   useEffect(() => {
     fetch(
-      "https://api.mockfly.dev/mocks/a90d730f-3137-4eed-b2c2-84cb23ea96c4/Games"
+      "https://api.mockfly.dev/mocks/60fe8fb4-6deb-45bf-a8f8-8334d38c7cb1/Games"
     )
       .then((response) => response.json())
       .then((json) => {
@@ -58,7 +59,7 @@ const GamePage = () => {
 
   useEffect(() => {
     fetch(
-      "https://api.mockfly.dev/mocks/a90d730f-3137-4eed-b2c2-84cb23ea96c4/NewGames",
+      "https://api.mockfly.dev/mocks/60fe8fb4-6deb-45bf-a8f8-8334d38c7cb1/NewGames",
       { method: "GET" }
     )
       .then((response) => response.json())

@@ -77,7 +77,7 @@ const SteamDeck: FC<HeloProps> = ({
 
       {filteredBySteamDeck.map((game) => (
         <div className="Search_List_Item" key={game.id}>
-          <Link to={`/About/${game.id}`} state={{ games: filteredBySteamDeck }}>
+          <Link to={`/About/${game.id}`} state={{ games: selectedGames }}>
             <img src={game.img} className="Photo_List" alt={game.title} />
           </Link>
           <div className="Text_Card">

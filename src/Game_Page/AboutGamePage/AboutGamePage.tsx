@@ -46,6 +46,7 @@ const AboutGame = () => {
     (state: CounterState) => state.counterSelected.SelectedGames
   );
 
+
   const handleFavoriteToggle = (
     id: number,
     img: string,
@@ -54,11 +55,14 @@ const AboutGame = () => {
     price: number
   ) => {
     if (selectedGames.some((game: { id: number }) => game.id === id)) {
-      dispatch(removeselected({ id, title, plantofm, price, img })); // Видалити з обраних
+      // Видалити з обраних
+      dispatch(removeselected({ id, title, plantofm, price, img }));
     } else {
-      dispatch(incrementselected({ id, title, plantofm, price, img })); // Додати до обраних
+      // Додати до обраних
+      dispatch(incrementselected({ id, title, plantofm, price, img }));
     }
   };
+  
 
   return (
     <>
@@ -147,65 +151,49 @@ const AboutGame = () => {
                         <a className="stock">В наявності</a>
                       </div>
                     </div>
-                    <div className="liked">
-                      <span className="wrapper-selecter">
-                        {selectedGames.some(
-                          (g: { id: number }) => g.id === game.id
-                        ) ? (
-                          <FaHeart
-                            className="FaRegHeart"
-                            size={20}
-                            color="red"
-                            onClick={() =>
-                              handleFavoriteToggle(
-                                game.id,
-                                game.title,
-                                game.img,
-                                game.plantofm,
-                                game.price
-                              )
-                            }
-                          />
-                        ) : (
-                          <FaRegHeart
-                            className="FaRegHeart"
-                            size={20}
-                            onClick={() => (
-                              game.id,
-                              game.img,
-                              game.title,
-                              game.plantofm,
-                              game.price
-                            )}
-                          />
-                        )}
-                        {selectedGames.some(
-                          (g: { id: number }) => g.id === game.id
-                        ) ? (
-                          <p
-                            className="selecter-game"
-                            onClick={() => handleFavoriteToggle(                            game.id,
-                              game.title,
-                              game.img,
-                              game.plantofm,
-                              game.price)}
-                          >
-                            Вибране
-                          </p>
-                        ) : (
-                          <p
-                            className="selecter-game"
-                            onClick={() => handleFavoriteToggle(                            game.id,
-                              game.title,
-                              game.img,
-                              game.plantofm,
-                              game.price)}
-                          >
-                            Вибрати
-                          </p>
-                        )}
-                      </span>
-                    </div>
+ 
+
+
+                    {selectedGames.some(
+                      (g: { id: number }) => g.id === game.id
+                    ) ? (
+                      <FaHeart
+                        className="FaRegHeartGamePage2"
+                        size={30}
+                        color="red"
+                        onClick={() =>
+                          handleFavoriteToggle(
+                            game.id,
+                            game.title,
+                            game.img,
+                            game.plantofm,
+                            game.price
+                          )
+                        }
+                      />
+                    ) : (
+                      <FaRegHeart
+                        className="FaRegHeart2"
+                        size={30}
+                        onClick={() =>
+                          handleFavoriteToggle(
+                            game.id,
+                            game.img,
+                            game.title,
+                            game.plantofm,
+                            game.price
+                          )
+                        }
+                      />
+                    )}
+
+
+
+
+
+
+
+
                   </div>
                 </span>
                 <div className="installment-plan">

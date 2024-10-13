@@ -8,7 +8,7 @@ const InputComponent = () => {
 
   useEffect(() => {
     fetch(
-      "https://api.mockfly.dev/mocks/a90d730f-3137-4eed-b2c2-84cb23ea96c4/Games"
+      "https://api.mockfly.dev/mocks/60fe8fb4-6deb-45bf-a8f8-8334d38c7cb1/Games"
     )
       .then((response) => response.json())
       .then((json) => {
