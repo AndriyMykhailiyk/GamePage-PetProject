@@ -1,5 +1,5 @@
 import "./BestFor.scss";
-import { useEffect, useState } from "react";
+import { SetStateAction, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { MdEuro } from "react-icons/md";
 import { useSelector, useDispatch } from "react-redux";
@@ -56,13 +56,6 @@ const BestGameCart = () => {
     setNintendo(!nintendo);
   };
 
-  interface GameI {
-    plantofm: string;
-    img: string;
-    title: string;
-    price: number;
-    id: number;
-  }
 
   const addedGames = useSelector(
     (state: { counter: { addedGames: { id: number }[] } }) =>
@@ -216,7 +209,7 @@ const BestGameCart = () => {
           />
         ) : (
           <div className="List-section">
-            {filteredByPc.map((game: GameI) => (
+            {filteredByPc.map((game: {id: SetStateAction<null>}) => (
               <div
                 className="Search_List_Item-Main"
                 key={game.id}

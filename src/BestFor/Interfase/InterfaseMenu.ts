@@ -19,6 +19,7 @@ interface GameI {
 }
 
 export type Xboxx = {
+  handleFavoriteToggle: (game: Plantofm) => void;
   hoveredGame: null;
   filteredByXbox:GameI[];
 };

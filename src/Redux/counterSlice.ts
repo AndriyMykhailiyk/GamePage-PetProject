@@ -40,7 +40,7 @@ const initialState: CounterState = {
   addedGames: [],
   AddFavorute: {
     count: 0, // Початкове значення для кількості обраних ігор
-    SelectedGames: [], 
+    SelectedGames: [], // Initialize as an empty array
   },
   counterSelected: {
     count: 0,
@@ -48,8 +48,6 @@ const initialState: CounterState = {
   },
   SelectedGames: [], // Initialize as an empty array
 };
-
-
 const counterSlice = createSlice({
   name: "counter",
   initialState,
