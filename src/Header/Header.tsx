@@ -3,6 +3,7 @@ import "./Header.scss";
 import InputComponent from "./InputCom/InputComponent";
 import Btn from "../Btn/Btn";
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const location = useLocation();
@@ -12,6 +13,11 @@ const Header = () => {
       : { color: "white" };
   };
 
+
+  
+  const count = useSelector(
+    (state: { counter: { count: number } }) => state.counter.count
+  );
   return (
     <>
       <header className="wrapper">
@@ -55,6 +61,9 @@ const Header = () => {
                 }}
               >
                 <li className="acc">Акаунт</li>
+                <div className="wrapper-count-game-header">
+                <p className="count-game">{count}</p>
+                </div>
               </Link>
             </ul>
           </div>
