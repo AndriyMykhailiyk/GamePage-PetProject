@@ -91,7 +91,7 @@ const MyAccount = () => {
     <>
       <Header />
       <section className="wrapper-23">
-        <div className="wrapper_header">
+        <div className="wrapper_header45">
           <h1
             onClick={HandleBusket}
             className={busket ? "busketset" : "busketsetUNset"}

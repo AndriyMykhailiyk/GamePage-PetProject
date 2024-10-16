@@ -1,3 +1,7 @@
+.wrapperJodasComponent {
+padding-top: 5em;
+
+
 .btn_section {
   background-color: #606060;
   border-radius: 50px;
@@ -5,4 +9,25 @@
 .right_side2 {
   display: flex;
   gap: 7%;
+}
+.about_header {
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+.popual_game_title {
+  margin-bottom: 20px;
+  font-size: 25px;
+  line-height: 1.2;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+
+}
+}
+.right_side2 {
+  display: flex;
+justify-content: center;
+align-items: center;
+}
 }

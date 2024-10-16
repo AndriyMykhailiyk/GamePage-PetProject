@@ -139,3 +139,29 @@ font-size: 13px;
   .tel-a-te:hover {
   
 color: #fcaf17;  }
+.count-game {
+  cursor: text;
+  display: inline;
+}
+.wrapper-count-game-header {
+  position: absolute;
+  height: 16px;
+  line-height: 16px;
+  top: -7px;
+  right: -16px;
+  padding: 3px 7px;
+  min-width: 7px;
+  border-radius: 15px;
+  background: #fcaf17;
+  color: #ffe3e3;
+  font-size: 14px;
+  text-align: center;
+}
+
+.wrapper-header-counter {
+  position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    transition: all .15s;
+    fill: #fff;
+}

@@ -54,6 +54,10 @@ const Header = () => {
                 <li>Допомога</li>
               </Link>
 
+
+
+
+<div className="wrapper-header-counter">
               <Link
                 to="/MyAccount"
                 style={{
@@ -61,10 +65,18 @@ const Header = () => {
                 }}
               >
                 <li className="acc">Акаунт</li>
+
+                
                 <div className="wrapper-count-game-header">
                 <p className="count-game">{count}</p>
                 </div>
               </Link>
+              </div>
+
+
+
+
+
             </ul>
           </div>
           <InputComponent />

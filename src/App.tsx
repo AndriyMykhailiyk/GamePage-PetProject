@@ -2,7 +2,6 @@ import "./App.scss";
 import Header from "./Header/Header";
 import BunerHeader from "./Photo_Folder/GTA 6 banner.png";
 import Jodas from "./Jodas/Jodas";
-import Swiper_Components from "./Swiper/Swiper";
 import News from "./News/News";
 import Bunner from "./Bunner/Bunner_Section";
 import Fotter from "./Footer/Fotter";
@@ -19,7 +18,6 @@ function App() {
           className="Bunner_Photo-hello"
         />
         <Jodas />
-        <Swiper_Components />
         <News />
         <Bunner />
         <BestGameCart />
