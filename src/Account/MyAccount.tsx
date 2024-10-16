@@ -114,7 +114,7 @@ const MyAccount = () => {
                 <span className="count-Game">{count}</span>
               </div>
 
-              {favoriteGames.length > 0 ? (
+              {addedGames.length > 0 ? (
                 addedGames.map(
                   (game: {
                     plantofm: string;

@@ -15,6 +15,7 @@ import SteamDeck from "./SteamDeck/SteamDeckPage.js";
 import PcPage from "./Pc/PcPage.js";
 import LowPrise from "./DwopDownMenu/FilteredMenu.tsx";
 import NewGamePage from "./NewGamePage/NewGamePage.tsx";
+import { useLocation } from "react-router-dom";
 
 const ShopPage = () => {
   const [data, setData] = useState<[]>([]);
@@ -27,7 +28,8 @@ const ShopPage = () => {
   const [MenuBlock, setMenuBlock] = useState<boolean>(false);
   const [price, setPrise] = useState<boolean>(false);
   const [NewGame, setNewGame] = useState<boolean>(false);
-
+  const location = useLocation();
+  const isActive = location.state?.active;
   const HandleLoPrise = () => {
     setSteamDeck(Nintendostate);
     setNintendo(Nintendostate);
@@ -297,7 +299,7 @@ const ShopPage = () => {
                 }}
                 MdEuro={undefined}
               />
-            ) : Pcstate ? (
+            ) : Pcstate && isActive ? (
               <PcPage
                 filteredByPc={filteredByPc}
                 dispatch={dispatch}

@@ -53,6 +53,7 @@ const counterSlice = createSlice({
   initialState,
   reducers: {
     increment: (state: CounterState, action: PayloadAction<Game>) => {
+      console.log("Payload гри:", action.payload); // Додайте це для відлагодження
       if (!state.addedGames.some((game) => game.id === action.payload.id)) {
         state.count += 1;
         state.addedGames.push(action.payload);
@@ -78,6 +79,7 @@ const counterSelectedSlice = createSlice({
   },
   reducers: {
     incrementselected: (state, action: PayloadAction<SelectedGame>) => {
+      console.log("Payload гри:", action.payload); // Додайте це для відлагодження
       if (!state.SelectedGames.some((game) => game.id === action.payload.id)) {
         state.count += 1;
         state.SelectedGames.push(action.payload);
