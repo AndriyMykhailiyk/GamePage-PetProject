@@ -21,7 +21,7 @@ const Jodas = () => {
         <div className="right_side2">
 
 
-          
+          цв
             <button className="btn_section" onClick={handleRedirect}>РС</button>
            
           </div>
