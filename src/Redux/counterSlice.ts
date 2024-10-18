@@ -48,6 +48,26 @@ const initialState: CounterState = {
   },
   SelectedGames: [], // Initialize as an empty array
 };
+const loadState = (): CounterState => {
+  const serializedState = localStorage.getItem("counterState");
+  return serializedState ? JSON.parse(serializedState) : {
+    count: 0,
+    addedGames: [],
+    SelectedGames: [],
+  };
+};
+
+// Save state to localStorage
+const saveState = (state: CounterState) => {
+  const serializedState = JSON.stringify(state);
+  localStorage.setItem("counterState", serializedState);
+};
+
+
+const initialState2 = loadState();
+
+
+
 const counterSlice = createSlice({
   name: "counter",
   initialState,
@@ -91,6 +111,8 @@ const counterSelectedSlice = createSlice({
       state.SelectedGames = state.SelectedGames.filter(
         (game) => game.id !== action.payload // Передайте тільки ID
       );
+      saveState(state); // Save state after updating
+
       console.log("Гру №" + action.payload + " Видалено з вибраних");
     }
   },

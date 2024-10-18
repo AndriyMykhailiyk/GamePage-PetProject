@@ -17,6 +17,12 @@ import { FaArrowDown } from "react-icons/fa";
 const GamePage = () => {
   const [data, setData] = useState([]);
   const [datanew, setDataNew] = useState([]);
+  const [visibleCount, setVisibleCount] = useState(4); // Стан для кількості видимих ігор
+
+  const loadMoreGames = () => {
+    setVisibleCount(prevCount => prevCount + 4); // Завантажити ще 4 гри
+  };
+
 
 
   const addedGames = useSelector(
@@ -119,7 +125,7 @@ const GamePage = () => {
              <section className="wrapper-prise">
               <h2 className="Text-mostsummer">ПОПУЛЯРНІ ІГРИ ОСЕНІ 2024</h2>
                     <div className="List_Section">
-                      {filteredProducts.map(
+                      {filteredProducts.slice(0, visibleCount).map(
                         (game: {
                           id: number;
                           img: string;
@@ -226,7 +232,9 @@ const GamePage = () => {
                         )
                       )}
                     </div>
-             
+                    {visibleCount < filteredProducts.length && ( // Показати кнопку, якщо є ще ігри для завантаження
+              <button onClick={loadMoreGames} className="load-more-btn">Завантажити ще 4 гри</button>
+            )}
                 </section>
    
                 <div className="btnmenuprise">

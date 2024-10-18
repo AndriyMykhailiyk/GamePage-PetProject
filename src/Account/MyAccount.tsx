@@ -6,10 +6,12 @@ import { CounterState, removeGame } from "../Redux/counterSlice.js";
 import { ImCross } from "react-icons/im";
 import { MdEuro } from "react-icons/md";
 import { removeselected } from "../Redux/counterSlice";
+import { HiOutlineTrash } from "react-icons/hi2";
+import { IoTrash } from "react-icons/io5";
 
 import { GotoBuy } from "../Btn/Btn.js";
 import { Link} from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 type GameQuantities = {
   [key: number]: number; // Ключі - id ігор, значення - кількість
@@ -21,6 +23,17 @@ const MyAccount = () => {
   const [fovorite, setfovorite] = useState(false);
   const [gameQuantities, setGameQuantities] = useState<GameQuantities>({});
 
+
+  useEffect(() => {
+    const storedQuantities = localStorage.getItem("gameQuantities");
+    if (storedQuantities) {
+      setGameQuantities(JSON.parse(storedQuantities));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("gameQuantities", JSON.stringify(gameQuantities));
+  }, [gameQuantities]);
 
   const HandleFavore = () => {
     setfovorite(true); // Показати вибрані
@@ -170,9 +183,11 @@ const MyAccount = () => {
                         </button>
                       </section>
                       <span className="right-side">
-                        <ImCross
+                        <IoTrash
+                          size={25}
+                        
                           className="cross"
-                          fill="red"
+                          fill="#eb5757"
                           onClick={() => dispatch(removeGame(game.id))}
                         />
                         <div className="wrapper-prise1">

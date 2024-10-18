@@ -1,5 +1,8 @@
+.wrapper2 {
+  padding: 3em 10em;
+}
+
 .wrapperJodasComponent {
-padding-top: 5em;
 
 
 .btn_section {
@@ -29,5 +32,31 @@ align-items: center;
   display: flex;
 justify-content: center;
 align-items: center;
+
+.Ps-class1 {
+  width: 20%;
+}
+.Ps-class2 {
+  width: 20%;
+}
+
+.Ps-class3 {
+  width: 15%;
+}
+
+.Ps-class4 {
+  width: 30%;
+}
+}
+.Ul-Photo-Category {
+  display: block;
+}
+
+.wrapper-photo {
+  padding-left: 16em;
+}
+
+.wrapper-photo > span > img {
+  cursor: pointer;
 }
 }

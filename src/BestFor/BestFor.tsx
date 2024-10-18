@@ -11,6 +11,7 @@ import PlayStationGame from "./List/PlayStation/PlayStationGame";
 import NintendoGame from "./List/Nintendo/NintendoGame";
 import { FaHeart } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
+import { GiCheckMark } from "react-icons/gi";
 
 import FullGame from "./List/Every/FullGame";
 
@@ -269,9 +270,16 @@ const BestGameCart = () => {
                     </span>
                   </div>
 
+
                   {hoveredGame === game.id && (
+                    
                     <div className="wrapper-platform">
+                      <div className="in_stock">
+                        <GiCheckMark fill="#27ae60"/>
+        В наявності
+                        </div>
                       <div className="platfrom">
+                        
                         <div className="wrapper-section-modale">
                           <p className="game-Title-platrorm">{game.plantofm}</p>
                         </div>
