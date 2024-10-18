@@ -48,3 +48,9 @@ export default tseslint.config({
   },
 })
 ```
+
+
+git status
+git add .
+git commit -m "Опис змін"
+git push origin main
